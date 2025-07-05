@@ -88,17 +88,6 @@ nav ul li a.active {
   }
 }
 
-/* フッター */
-footer {
-  background: #171515;
-  border-top: 2px solid #6a4baf;
-  padding: 1rem 2rem;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 3rem;
-  width: 100%;
-}
 
 /* ページトップボタン */
 #pageTopBtn {
@@ -149,4 +138,57 @@ footer {
 
 .top-page p{
     margin-bottom: 1rem;
+}
+
+/*---hobbyページ本文---*/
+.hobby-page {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 1rem;
+}
+
+.tft-about h1 {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.tft-about p{
+  padding-left: 2rem;
+}
+
+/*---hobbyページ本文---*/
+.qualifications-page {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 1rem;
+}
+
+.qualifications-page h1{
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+}
+
+.qualifications-mane{
+  padding-left: 2rem;
+  list-style: none;
+}
+
+.qualifications-provided{
+  padding-left: 4rem;
+  list-style: none;
+  font-size: 70%;
+}
+
+/* フッター */
+footer {
+  background: #171515;
+  border-top: 2px solid #6a4baf;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 3rem;
+  width: 100%;
 }
