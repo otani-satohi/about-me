@@ -157,7 +157,12 @@ nav ul li a.active {
   padding-left: 2rem;
 }
 
-/*---hobbyページ本文---*/
+.jp_pros img{
+  max-width: 50%;
+  height: auto;
+}
+
+/*---qualificationsページ本文---*/
 .qualifications-page {
         max-width: 900px;
         margin: 2rem auto;
@@ -191,4 +196,156 @@ footer {
   color: #666;
   margin-top: 3rem;
   width: 100%;
+}
+
+/* contactページ */
+
+/* ページ見出し */
+.contact-title {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 2rem 0 1rem;
+  color: var(--accent);
+  text-align: center;
+}
+
+/* フォーム外枠（中央寄せカード） */
+.contact-card {
+  --card-bg: #1b1b1b;
+  --card-border: #333;
+  --shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: clamp(1rem, 3vw, 2rem);
+  max-width: 720px;
+  margin: 1rem auto 3rem;
+  box-shadow: var(--shadow);
+}
+
+/* ラベル */
+.contact-form label {
+  display: block;
+  font-weight: 700;
+  margin: 1rem 0 0.4rem;
+  color: #eaeaea;
+}
+
+/* 必須マーク */
+.contact-form .req::after {
+  content: " *";
+  color: var(--accent);
+  margin-left: 0.2em;
+}
+
+/* インプット系共通 */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form input[type="url"],
+.contact-form textarea,
+.contact-form select {
+  appearance: none;
+  width: 100%;
+  color: #fff;
+  background: #111;
+  border: 1px solid #3a3a3a;
+  border-radius: 10px;
+  padding: 0.85rem 0.95rem;
+  line-height: 1.5;
+  transition: border-color 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+}
+
+/* フォーカス状態（紫グロー） */
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(126, 87, 194, 0.25);
+  background: #0e0e0e;
+}
+
+/* プレースホルダ */
+.contact-form ::placeholder {
+  color: #8a8a8a;
+}
+
+/* テキストエリア */
+.contact-form textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+/* 2カラム配置（幅が広い時） */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 720px) {
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* 小さな補足テキスト */
+.form-hint {
+  font-size: 0.9rem;
+  color: #bdbdbd;
+  margin-top: 0.35rem;
+}
+
+/* エラーテキスト（任意） */
+.form-error {
+  color: #ff8a80;
+  font-size: 0.92rem;
+  margin-top: 0.35rem;
+}
+
+/* バリデーション色（HTML標準の:invalidを活用） */
+.contact-form :invalid:not(:placeholder-shown) {
+  border-color: #d66;
+}
+
+/* 送信ボタン */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  margin-top: 1.25rem;
+  padding: 0.9rem 1.25rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+
+  background: linear-gradient(180deg, var(--accent), #6a4baf);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 160ms ease, opacity 160ms ease;
+  box-shadow: 0 8px 18px rgba(126, 87, 194, 0.35);
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(126, 87, 194, 0.45);
+}
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 12px rgba(126, 87, 194, 0.3);
+}
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* フォーム下の注記 */
+.form-note {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #cfcfcf;
 }
