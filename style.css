@@ -196,6 +196,82 @@ nav ul li a.active {
   font-size: 70%;
 }
 
+/* --- certificationページ本文 --- */
+.qualifications-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.qualifications-page h1 {
+  color: #6a4baf;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+.qualifications-page h2 {
+  color: #6a4baf;
+  font-size: 1.3rem;
+  margin-top: 2.2rem;
+  margin-bottom: 0.7rem;
+}
+
+.qualifications-page h4 {
+  color: #6a4baf;
+  margin-top: 2.2rem;
+  margin-bottom: 0.7rem;
+}
+
+/* 資格リスト */
+.qualifications-list {
+  background: #18171a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  list-style: none;
+}
+.qualifications-mane {
+  font-weight: 700;
+  color: #fff;
+  margin-top: 0.7rem;
+  margin-bottom: 0.1rem;
+  padding-left: 0.5rem;
+}
+.qualifications-provided {
+  color: #bdbdbd;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  padding-left: 2rem;
+}
+
+/* 資格説明文 */
+.qualifications-explanation {
+  background: #23202a;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.2rem;
+  color: #eaeaea;
+  font-size: 1rem;
+  line-height: 1.7;
+  border-left: 4px solid #6a4baf;
+}
+
+@media (max-width: 600px) {
+  .qualifications-page {
+    padding: 0.5rem;
+  }
+  .qualifications-list {
+    padding: 0.7rem 0.5rem;
+  }
+  .qualifications-explanation {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.97rem;
+  }
+  .qualifications-page h1 {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+}
+
 /* フッター */
 footer {
   background: #171515;
@@ -358,4 +434,171 @@ footer {
   margin-top: 0.75rem;
   font-size: 0.9rem;
   color: #cfcfcf;
+}
+
+/* --- aboutページ本文 --- */
+.about-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.about-page h1 {
+  color: #6a4baf;
+  text-align: right;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about-page h2 {
+  color: #6a4baf;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ヒーロー（プロフィールサマリー） */
+.about-hero {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  background: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1rem;
+}
+.about-hero img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 4px solid rgba(126, 87, 194, 0.12);
+}
+.about-hero .intro {
+  flex: 1;
+}
+.about-hero h1 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin: 0 0 0.4rem;
+}
+.about-hero p {
+  margin: 0;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+/* メインとサイドの2カラムレイアウト（狭い画面では1カラムに） */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-hero img {
+    margin: 0 auto;
+    width: 40%;
+    height: auto;
+  }
+}
+
+/* プロフィールカード（サイド） */
+.profile-card {
+  background: #161616;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1rem;
+}
+.profile-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #ddd;
+}
+.profile-card li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed rgba(255,255,255,0.03);
+}
+.profile-card li:last-child { border-bottom: none; }
+
+/* 年表（経歴） */
+.timeline {
+  background: transparent;
+  border-radius: 12px;
+  padding: 0.25rem 0;
+}
+.timeline-item {
+  margin-bottom: 1.25rem;
+  padding-left: 1rem;
+  border-left: 3px solid rgba(126,87,194,0.12);
+}
+.timeline-item h3 {
+  margin: 0;
+  color: var(--accent);
+  font-size: 1.05rem;
+}
+.timeline-item p {
+  margin: 0.25rem 0 0;
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+/* スキルバッジ */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+.skill {
+  background: #2a2a2a;
+  color: #fff;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+/* 引用やモチベーション */
+.about-quote {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #cfcfcf;
+  background: linear-gradient(90deg, rgba(126,87,194,0.06), transparent);
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+
+/* 小さなプロジェクトギャラリー（任意） */
+.about-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.about-gallery img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+/* ボタン調整（aboutページ用CTA） */
+.btn-secondary {
+  display: inline-block;
+  padding: 0.6rem 0.9rem;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid rgba(126,87,194,0.18);
+  font-weight: 700;
 }
