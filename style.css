@@ -160,7 +160,17 @@ nav ul li a.active {
 .jp_pros img{
   max-width: 50%;
   height: auto;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
 }
+
+.jp_pros_about {
+  display: flex;
+  margin: 2rem auto;
+  margin-bottom: 4rem auto;
+}
+
 
 /*---qualificationsページ本文---*/
 .qualifications-page {

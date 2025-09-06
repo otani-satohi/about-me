@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!Doctype html>
 <html lang="ja">
 
@@ -61,3 +62,67 @@
 </body>
 
 </html>
+=======
+<!Doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>期末課題</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">YourName</div>
+    
+        <nav>
+            <ul id="navList">
+            <li><a href="/about-me/index.html">Home</a></li>
+            <li><a href="/about-me/about.html">About</a></li>
+            <li><a href="/about-me/certification.html">Qualifications</a></li>
+            <li><a href="/about-me/hobby.html">Hobby</a></li>
+            <li><a href="/about-me/contct.html" class="active">Contact</a></li>
+    </ul>
+        </nav>
+    <div class="hamburger" id="hamburgerBtn" aria-label="Menu" aria-expanded="false" role="button" tabindex="0">
+        <div></div><div></div><div></div>
+    </div>
+    </header>
+
+    <h1 class="contact-title">問い合わせ</h1>
+    <form  class="contact-form contact-card" action="#" method="post">
+        <div class="form-grid">
+            <div>
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="name" placeholder="例：山田太郎" required>
+            </div>
+            <div>
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" placeholder="例：example@mail.com" required>
+            </div>
+        </div>
+        <label for="subject">件名</label>
+        <input type="text" id="subject" name="subject" placeholder="例：サイトについて">
+
+        <label for="message" class="req">お問い合わせ内容</label>
+        <textarea id="message" name="message" placeholder="こちらにご記入ください" required></textarea>
+        
+        <button type="submit" class="btn-primary">送信</button>
+    </form>
+</body>
+    <footer>
+    © 2025 YourName. All rights reserved.
+    
+    </footer>
+    
+    <button id="pageTopBtn" aria-label="ページトップへ">↑</button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+>>>>>>> 63a2640f2d6f7ebf45e2fad074b21df35c11141b
